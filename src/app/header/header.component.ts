@@ -28,9 +28,8 @@ import { ContentComponent } from '../content/content.component';
 export class HeaderComponent {
   private breakpointObserver = inject(BreakpointObserver);
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches),
-      shareReplay()
-    );
+  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
+    map(result => result.matches),
+    shareReplay()
+  );
 }
