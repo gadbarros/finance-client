@@ -21,7 +21,7 @@ jobs:
       - name: Install Angular CLI
         run: npm install -g @angular/cli
       - name: Run tests and coverage
-        run: ng test --code-coverage --no-watch --no-progress --browsers=ChromeHeadless
+        run: ng test --code-coverage --no-watch --no-progress --karma-config=karma.conf.js
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
