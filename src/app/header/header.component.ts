@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
-import { BreakpointService } from '../shared/service/BreakpointService';
+import { BreakpointService } from '../shared/service/breakpoint.service';
 import { MatIconModule } from '@angular/material/icon';
 import { AsyncPipe } from '@angular/common';
 import { MatSidenav } from '@angular/material/sidenav';

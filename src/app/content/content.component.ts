@@ -3,14 +3,13 @@ import { MatTableModule, MatTable } from '@angular/material/table';
 import { MatPaginatorModule, MatPaginator } from '@angular/material/paginator';
 import { MatSortModule, MatSort } from '@angular/material/sort';
 import { ContentDataSource, ContentItem } from './content-datasource';
-import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrl: './content.component.css',
   standalone: true,
-  imports: [MatTableModule, MatPaginatorModule, MatSortModule, FooterComponent]
+  imports: [MatTableModule, MatPaginatorModule, MatSortModule]
 })
 export class ContentComponent implements AfterViewInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;

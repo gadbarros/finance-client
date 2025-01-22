@@ -9,7 +9,7 @@ import { AsyncPipe } from '@angular/common';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { Observable } from 'rxjs';
-import { BreakpointService } from './shared/service/BreakpointService';
+import { BreakpointService } from './shared/service/breakpoint.service';
 
 @Component({
   selector: 'app-root',
@@ -28,8 +28,7 @@ import { BreakpointService } from './shared/service/BreakpointService';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'finance-client';
+export class AppComponent {  
   isHandset$: Observable<boolean>;
 
   constructor(private breakpointService: BreakpointService) {
